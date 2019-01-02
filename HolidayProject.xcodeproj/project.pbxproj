@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		961F6BFC21DACCD800ADFD56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F6BFB21DACCD800ADFD56 /* DetailViewController.swift */; };
+		961F6C0221DAD3F600ADFD56 /* AnimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F6C0121DAD3F600ADFD56 /* AnimeCell.swift */; };
+		96BC9A2821C305BF00CE6094 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC9A2721C305BF00CE6094 /* AppDelegate.swift */; };
+		96BC9A2A21C305BF00CE6094 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC9A2921C305BF00CE6094 /* AnimeViewController.swift */; };
+		96BC9A2D21C305BF00CE6094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BC9A2B21C305BF00CE6094 /* Main.storyboard */; };
+		96BC9A2F21C305C000CE6094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BC9A2E21C305C000CE6094 /* Assets.xcassets */; };
+		96BC9A3221C305C000CE6094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BC9A3021C305C000CE6094 /* LaunchScreen.storyboard */; };
+		96BC9A3D21C305C000CE6094 /* HolidayProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC9A3C21C305C000CE6094 /* HolidayProjectTests.swift */; };
+		96BC9A4821C305C000CE6094 /* HolidayProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC9A4721C305C000CE6094 /* HolidayProjectUITests.swift */; };
+		96BC9A5621C306E100CE6094 /* animeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC9A5521C306E100CE6094 /* animeAPI.swift */; };
+		96BC9A5821C306ED00CE6094 /* GotAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC9A5721C306ED00CE6094 /* GotAnime.swift */; };
+		96F148C621C4884000E73F48 /* urlToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F148C521C4884000E73F48 /* urlToData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96BC9A3921C305C000CE6094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96BC9A1C21C305BF00CE6094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96BC9A2321C305BF00CE6094;
+			remoteInfo = HolidayProject;
+		};
+		96BC9A4421C305C000CE6094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96BC9A1C21C305BF00CE6094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96BC9A2321C305BF00CE6094;
+			remoteInfo = HolidayProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		961F6BFB21DACCD800ADFD56 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		961F6C0121DAD3F600ADFD56 /* AnimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCell.swift; sourceTree = "<group>"; };
+		96BC9A2421C305BF00CE6094 /* HolidayProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolidayProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BC9A2721C305BF00CE6094 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96BC9A2921C305BF00CE6094 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		96BC9A2C21C305BF00CE6094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96BC9A2E21C305C000CE6094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96BC9A3121C305C000CE6094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96BC9A3321C305C000CE6094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BC9A3821C305C000CE6094 /* HolidayProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolidayProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BC9A3C21C305C000CE6094 /* HolidayProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayProjectTests.swift; sourceTree = "<group>"; };
+		96BC9A3E21C305C000CE6094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BC9A4321C305C000CE6094 /* HolidayProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HolidayProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BC9A4721C305C000CE6094 /* HolidayProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayProjectUITests.swift; sourceTree = "<group>"; };
+		96BC9A4921C305C000CE6094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BC9A5521C306E100CE6094 /* animeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animeAPI.swift; sourceTree = "<group>"; };
+		96BC9A5721C306ED00CE6094 /* GotAnime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotAnime.swift; sourceTree = "<group>"; };
+		96F148C521C4884000E73F48 /* urlToData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlToData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96BC9A2121C305BF00CE6094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BC9A3521C305C000CE6094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BC9A4021C305C000CE6094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96BC9A1B21C305BF00CE6094 = {
+			isa = PBXGroup;
+			children = (
+				96BC9A2621C305BF00CE6094 /* HolidayProject */,
+				96BC9A3B21C305C000CE6094 /* HolidayProjectTests */,
+				96BC9A4621C305C000CE6094 /* HolidayProjectUITests */,
+				96BC9A2521C305BF00CE6094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96BC9A2521C305BF00CE6094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96BC9A2421C305BF00CE6094 /* HolidayProject.app */,
+				96BC9A3821C305C000CE6094 /* HolidayProjectTests.xctest */,
+				96BC9A4321C305C000CE6094 /* HolidayProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96BC9A2621C305BF00CE6094 /* HolidayProject */ = {
+			isa = PBXGroup;
+			children = (
+				96BC9A2721C305BF00CE6094 /* AppDelegate.swift */,
+				96BC9A2921C305BF00CE6094 /* AnimeViewController.swift */,
+				961F6C0121DAD3F600ADFD56 /* AnimeCell.swift */,
+				96F148C521C4884000E73F48 /* urlToData.swift */,
+				96BC9A2B21C305BF00CE6094 /* Main.storyboard */,
+				961F6BFB21DACCD800ADFD56 /* DetailViewController.swift */,
+				96BC9A2E21C305C000CE6094 /* Assets.xcassets */,
+				96BC9A5521C306E100CE6094 /* animeAPI.swift */,
+				96BC9A5721C306ED00CE6094 /* GotAnime.swift */,
+				96BC9A3021C305C000CE6094 /* LaunchScreen.storyboard */,
+				96BC9A3321C305C000CE6094 /* Info.plist */,
+			);
+			path = HolidayProject;
+			sourceTree = "<group>";
+		};
+		96BC9A3B21C305C000CE6094 /* HolidayProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				96BC9A3C21C305C000CE6094 /* HolidayProjectTests.swift */,
+				96BC9A3E21C305C000CE6094 /* Info.plist */,
+			);
+			path = HolidayProjectTests;
+			sourceTree = "<group>";
+		};
+		96BC9A4621C305C000CE6094 /* HolidayProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96BC9A4721C305C000CE6094 /* HolidayProjectUITests.swift */,
+				96BC9A4921C305C000CE6094 /* Info.plist */,
+			);
+			path = HolidayProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96BC9A2321C305BF00CE6094 /* HolidayProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96BC9A4C21C305C000CE6094 /* Build configuration list for PBXNativeTarget "HolidayProject" */;
+			buildPhases = (
+				96BC9A2021C305BF00CE6094 /* Sources */,
+				96BC9A2121C305BF00CE6094 /* Frameworks */,
+				96BC9A2221C305BF00CE6094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HolidayProject;
+			productName = HolidayProject;
+			productReference = 96BC9A2421C305BF00CE6094 /* HolidayProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96BC9A3721C305C000CE6094 /* HolidayProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96BC9A4F21C305C000CE6094 /* Build configuration list for PBXNativeTarget "HolidayProjectTests" */;
+			buildPhases = (
+				96BC9A3421C305C000CE6094 /* Sources */,
+				96BC9A3521C305C000CE6094 /* Frameworks */,
+				96BC9A3621C305C000CE6094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96BC9A3A21C305C000CE6094 /* PBXTargetDependency */,
+			);
+			name = HolidayProjectTests;
+			productName = HolidayProjectTests;
+			productReference = 96BC9A3821C305C000CE6094 /* HolidayProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96BC9A4221C305C000CE6094 /* HolidayProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96BC9A5221C305C000CE6094 /* Build configuration list for PBXNativeTarget "HolidayProjectUITests" */;
+			buildPhases = (
+				96BC9A3F21C305C000CE6094 /* Sources */,
+				96BC9A4021C305C000CE6094 /* Frameworks */,
+				96BC9A4121C305C000CE6094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96BC9A4521C305C000CE6094 /* PBXTargetDependency */,
+			);
+			name = HolidayProjectUITests;
+			productName = HolidayProjectUITests;
+			productReference = 96BC9A4321C305C000CE6094 /* HolidayProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96BC9A1C21C305BF00CE6094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Jason;
+				TargetAttributes = {
+					96BC9A2321C305BF00CE6094 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					96BC9A3721C305C000CE6094 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 96BC9A2321C305BF00CE6094;
+					};
+					96BC9A4221C305C000CE6094 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 96BC9A2321C305BF00CE6094;
+					};
+				};
+			};
+			buildConfigurationList = 96BC9A1F21C305BF00CE6094 /* Build configuration list for PBXProject "HolidayProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96BC9A1B21C305BF00CE6094;
+			productRefGroup = 96BC9A2521C305BF00CE6094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96BC9A2321C305BF00CE6094 /* HolidayProject */,
+				96BC9A3721C305C000CE6094 /* HolidayProjectTests */,
+				96BC9A4221C305C000CE6094 /* HolidayProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96BC9A2221C305BF00CE6094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BC9A3221C305C000CE6094 /* LaunchScreen.storyboard in Resources */,
+				96BC9A2F21C305C000CE6094 /* Assets.xcassets in Resources */,
+				96BC9A2D21C305BF00CE6094 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BC9A3621C305C000CE6094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BC9A4121C305C000CE6094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96BC9A2021C305BF00CE6094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961F6C0221DAD3F600ADFD56 /* AnimeCell.swift in Sources */,
+				96BC9A2A21C305BF00CE6094 /* AnimeViewController.swift in Sources */,
+				96BC9A5821C306ED00CE6094 /* GotAnime.swift in Sources */,
+				96BC9A5621C306E100CE6094 /* animeAPI.swift in Sources */,
+				961F6BFC21DACCD800ADFD56 /* DetailViewController.swift in Sources */,
+				96F148C621C4884000E73F48 /* urlToData.swift in Sources */,
+				96BC9A2821C305BF00CE6094 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BC9A3421C305C000CE6094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BC9A3D21C305C000CE6094 /* HolidayProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96BC9A3F21C305C000CE6094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BC9A4821C305C000CE6094 /* HolidayProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96BC9A3A21C305C000CE6094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96BC9A2321C305BF00CE6094 /* HolidayProject */;
+			targetProxy = 96BC9A3921C305C000CE6094 /* PBXContainerItemProxy */;
+		};
+		96BC9A4521C305C000CE6094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96BC9A2321C305BF00CE6094 /* HolidayProject */;
+			targetProxy = 96BC9A4421C305C000CE6094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96BC9A2B21C305BF00CE6094 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96BC9A2C21C305BF00CE6094 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96BC9A3021C305C000CE6094 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96BC9A3121C305C000CE6094 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96BC9A4A21C305C000CE6094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96BC9A4B21C305C000CE6094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96BC9A4D21C305C000CE6094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P5SSDN939;
+				INFOPLIST_FILE = HolidayProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.HolidayProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96BC9A4E21C305C000CE6094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P5SSDN939;
+				INFOPLIST_FILE = HolidayProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.HolidayProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96BC9A5021C305C000CE6094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P5SSDN939;
+				INFOPLIST_FILE = HolidayProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.HolidayProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolidayProject.app/HolidayProject";
+			};
+			name = Debug;
+		};
+		96BC9A5121C305C000CE6094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P5SSDN939;
+				INFOPLIST_FILE = HolidayProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.HolidayProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HolidayProject.app/HolidayProject";
+			};
+			name = Release;
+		};
+		96BC9A5321C305C000CE6094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P5SSDN939;
+				INFOPLIST_FILE = HolidayProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.HolidayProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HolidayProject;
+			};
+			name = Debug;
+		};
+		96BC9A5421C305C000CE6094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P5SSDN939;
+				INFOPLIST_FILE = HolidayProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pursuit.HolidayProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HolidayProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96BC9A1F21C305BF00CE6094 /* Build configuration list for PBXProject "HolidayProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96BC9A4A21C305C000CE6094 /* Debug */,
+				96BC9A4B21C305C000CE6094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96BC9A4C21C305C000CE6094 /* Build configuration list for PBXNativeTarget "HolidayProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96BC9A4D21C305C000CE6094 /* Debug */,
+				96BC9A4E21C305C000CE6094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96BC9A4F21C305C000CE6094 /* Build configuration list for PBXNativeTarget "HolidayProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96BC9A5021C305C000CE6094 /* Debug */,
+				96BC9A5121C305C000CE6094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96BC9A5221C305C000CE6094 /* Build configuration list for PBXNativeTarget "HolidayProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96BC9A5321C305C000CE6094 /* Debug */,
+				96BC9A5421C305C000CE6094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96BC9A1C21C305BF00CE6094 /* Project object */;
+}
