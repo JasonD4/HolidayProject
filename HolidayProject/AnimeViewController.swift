@@ -115,22 +115,25 @@ extension AnimeViewController: UITableViewDelegate{
 extension AnimeViewController: UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let searchName = searchBar.text else {return animeWanted = "bleach"}
+
+        guard var searchName = searchBar.text else {return animeWanted = "bleach"}
         
         animeWanted = searchName.replacingOccurrences(of: " ", with: "-")
         AnimeAPI.update { (animes) in
-            self.anime = animes
-            if self.anime.count == 0{
+            if animes.count == 0{
                 self.warningPopUp((Any).self)
+            }
+            else{
+                self.anime = animes
+                let indexPath = IndexPath(row: 0, section: 0)
+                DispatchQueue.main.async {
+                self.AnimeTableView.scrollToRow(at: indexPath, at: .top, animated: true)
+                }
             }
         }
         searchBar.resignFirstResponder()
-        let indexPath = IndexPath(row: 0, section: 0)
-        AnimeTableView.scrollToRow(at: indexPath, at: .top, animated: true)
 
-        
+        }
     }
     
-    
-    
-}
+

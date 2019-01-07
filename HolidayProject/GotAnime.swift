@@ -39,8 +39,8 @@ struct AllAttributs: Codable {
     let startDate: String?
     let endDate: String?
     let nextRelease: String?
-    let ageRating: String
-    let ageRatingGuide: String
+    let ageRating: String?
+    let ageRatingGuide: String?
     let status: String
     let tba: String?
     let posterImage: ImageURL
