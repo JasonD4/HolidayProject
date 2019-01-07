@@ -18,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT5-39-4US">
+                                <rect key="frame" x="0.0" y="32" width="375" height="667"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="warningPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5K-8c-f02"/>
+                                </connections>
+                            </button>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="x9g-bt-d6R">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -95,10 +102,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rl5-LK-aQf" secondAttribute="bottom" id="2EC-25-lrO"/>
+                            <constraint firstItem="TT5-39-4US" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5F9-AB-8gQ"/>
                             <constraint firstItem="x9g-bt-d6R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AcV-tG-hxi"/>
                             <constraint firstItem="x9g-bt-d6R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dtx-SD-gUX"/>
+                            <constraint firstItem="TT5-39-4US" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Inl-kD-PAV"/>
+                            <constraint firstItem="TT5-39-4US" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Lyb-qF-Jv0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rl5-LK-aQf" secondAttribute="trailing" id="Wae-18-uxf"/>
                             <constraint firstItem="Rl5-LK-aQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XJC-Lm-dP3"/>
+                            <constraint firstItem="TT5-39-4US" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ZmG-3p-V4w"/>
                             <constraint firstItem="x9g-bt-d6R" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lg5-A4-YPx"/>
                             <constraint firstItem="Rl5-LK-aQf" firstAttribute="top" secondItem="x9g-bt-d6R" secondAttribute="bottom" id="uT2-gS-UgN"/>
                         </constraints>
@@ -108,6 +119,7 @@
                     <connections>
                         <outlet property="AnimeSearchBar" destination="x9g-bt-d6R" id="WTE-cf-WfZ"/>
                         <outlet property="AnimeTableView" destination="Rl5-LK-aQf" id="19n-of-52H"/>
+                        <outlet property="DismissWarning" destination="TT5-39-4US" id="0BO-x7-OH5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

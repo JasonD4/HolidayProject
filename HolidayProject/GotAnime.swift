@@ -35,7 +35,7 @@ struct GotAnimeAttributes: Codable {
 struct AllAttributs: Codable {
     let synopsis: String?
     let canonicalTitle: String
-    let abbreviatedTitles: [String?]
+    let abbreviatedTitles: [String?]?
     let startDate: String?
     let endDate: String?
     let nextRelease: String?

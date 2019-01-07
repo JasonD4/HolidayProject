@@ -49,10 +49,10 @@ extension DetailViewController{
         
         if anime?.attributes.nextRelease == nil{
             
-            StatusAndNextRelease.text = "Is this anime still going: \(anime?.attributes.status ?? "")"
+            StatusAndNextRelease.text = "This Anime is finished"
         }
         else{
-            StatusAndNextRelease.text = "Is this anime still going: \(anime?.attributes.status ?? "") next episode \(anime?.attributes.nextRelease ?? "")"
+            StatusAndNextRelease.text = "Next Episode Release Date: \(anime?.attributes.nextRelease ?? "")"
         }
         
         
